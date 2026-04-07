@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${APP_PORT:-18008}:8000"
+    environment:
+      PYTHONUNBUFFERED: "1"
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///./renewable_energy_trading.db}
+      SECRET_KEY: ${SECRET_KEY:-dev-only-change-me}
+      JWT_EXPIRE_MINUTES: ${JWT_EXPIRE_MINUTES:-480}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-changeme}
+      DAO_HUB_URL: ${DAO_HUB_URL:-http://localhost:8000/api/v1}
+      DAO_NODE_ID: ${DAO_NODE_ID:-}
+    restart: unless-stopped
