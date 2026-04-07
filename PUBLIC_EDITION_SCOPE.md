@@ -1,12 +1,12 @@
 # Public Edition Scope
 
-This folder contains the curated public-edition version of the Renewable Energy Trading node that sits around DAO Hub inside the Sampo AI OS ecosystem.
+This folder contains the public repository version of the Renewable Energy Trading node that sits around DAO Hub inside the Sampo AI OS ecosystem.
 
 This node is published separately because it shows how DAO Hub can connect to energy-market workflows: market telemetry, synthetic price snapshots, trade creation, and route optimization for renewable energy volumes.
 
-## Included
+## Repository Focus
 
-This public edition intentionally includes:
+This repository includes:
 
 - a working FastAPI backend for authentication, market snapshots, trades, and optimization
 - a lightweight stochastic market simulator for renewable generation, demand, pricing, and carbon intensity
@@ -14,14 +14,9 @@ This public edition intentionally includes:
 - Docker runtime files and local development setup
 - a lightweight automated test suite for the public API surface
 
-## Intentionally Excluded
+## Repository Boundary
 
-This repository does not include:
-
-- private frontend fragments from the original source snapshot
-- broken or obsolete GAN and JavaScript unit test artifacts
-- wider private orchestration or unpublished ecosystem internals
-- raw planning, sales, or strategy material
+This repository focuses on the backend trading and market-analytics surface rather than packaging every surrounding ecosystem component.
 
 ## Narrative Role
 

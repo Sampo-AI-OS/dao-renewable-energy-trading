@@ -1,10 +1,10 @@
 # DAO Renewable Energy Trading
 
-DAO Renewable Energy Trading is a curated public-edition node from the Sampo AI OS ecosystem. It provides an energy-market subsystem around DAO Hub: synthetic market snapshots, renewable trade creation, optimization hints, and optional telemetry pushbacks into the governance hub.
+DAO Renewable Energy Trading is an energy-market node from the Sampo AI OS ecosystem. It provides a market-facing subsystem around DAO Hub: synthetic market snapshots, renewable trade creation, optimization hints, and optional telemetry pushbacks into the governance hub.
 
 This repository should be read as a standalone node around DAO Hub, not as the hub itself. DAO Hub remains the orchestration center. This node demonstrates how energy trading and market analytics can be exposed as an operational subsystem within the broader ecosystem.
 
-See `PUBLIC_EDITION_SCOPE.md` for what is included here and what was intentionally left out.
+See `PUBLIC_EDITION_SCOPE.md` for repository scope and runtime notes.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-service-009688)
@@ -18,7 +18,7 @@ The preview shows the renewable energy market view with spot pricing, wind and s
 
 ## What This Node Does
 
-The public edition exposes four core capability groups:
+This repository exposes four core capability groups:
 
 1. Market simulation
    Generate synthetic renewable generation, demand, spot-price, and carbon-intensity snapshots.
@@ -44,7 +44,7 @@ The public edition exposes four core capability groups:
 
 ## Architecture Overview
 
-The public edition keeps the original modular backend structure while simplifying the runtime defaults.
+The repository keeps a modular backend structure with local-friendly runtime defaults.
 
 - `main.py` exposes the API surface and startup seeding
 - `database.py` manages the SQLAlchemy engine and sessions
